@@ -114,9 +114,7 @@ The Lambda architecture addresses this problem by creating two paths for data fl
 -	The batch layer feeds into a “serving layer,” which responds to queries. The batch layer indexes the batch view for efficient querying. The speed layer updates the serving layer with incremental updates based on the most recent data.
 
 The following image shows five blocks that represent stages of transformation. The first block is the data stream, which feeds both the speed layer and batch layer in parallel. Both layers feed the serving layer, The speed layer and the serving layer both feed the analytics client.
-
-![Lambda architecture schematic.]
-(assets/extracting-insights-from-iot/lambda-schematic.png)
+![Lambda architecture.](assets/extracting-insights-from-iot/lambda-schematic.png)
 
  Azure platform provides various services that can be used for implementing the architecture. The following diagram shows how those services can be mapped to implement it. The figure shows the five stages of transformation, with each stage containing relevant Azure technologies. The darker colored boxes represent the availability of multiple options to perform those tasks.
 
